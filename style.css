@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(91, 6, 91);
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color:  rgb(188, 20, 188);
+}
+.name{
+    color: rgb(9, 9, 95);
+    font-weight: bold;
+}
+.left{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#element{
+    color: rgb(9, 9, 95);
+    font-weight: bold;
+}
+nav ul{
+ display: flex;
+ justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(29, 26, 26);
+    font-size: 1.01rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 140px 0;
+}
+.firstSection>div{
+    height: 30%;
+}
+.leftSection{
+    font-size: 3rem;
+}
+.leftSection .button{
+    padding: 30px 0;
+}
+.leftSection .btn{
+    
+    padding: 12px;
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.leftSection .btn:hover{
+    color: rgb(29, 26, 26);
+    font-size: 1.01rem;
+}
+.rightSection img{
+    height: 300px;
+}
+main hr{
+    border: 0;
+    margin: 40px 84px;
+    height: 1.2px;
+    background: rgb(188, 20, 188);
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.secondSection h1{
+    font-size: 1.5rem;
+}
+.secondSection .box{
+    background: white;
+    height: 1.5px;
+    width: 74vw;
+    margin: 50px 0;
+    display: flex;
+}
+.secondSection .vertical{
+    height: 98px;
+    width: 1px;
+    background: white;
+    margin:0 9vw;
+}
+.img-top{
+    position: relative;
+    top: -32px;
+    left: -9px;
+    width: 23px;
+}
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+.vertical-title-desc{
+    position: relative;
+    top: 86px;
+    width: 175px;
+    color: rgb(21 21 23);
+    font-size: 14px;
+}
+footer{
+    background-color:rgb(159, 126, 159);
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 23px 122px;
+}
+.footer ul{
+    text-decoration: none;
+}
+.footer>div{
+    width: 223px;
+}
+footer .footer-rights{
+    text-align: center;
+    padding: 12px 0;
+    color: rgb(25, 21, 21);
+}
+@media screen and (max-width: 1200px) {
+   body{
+    background-color: pink;
+  }
+  .box{
+    flex-direction: column;
+  }
+  .firstSection{
+    flex-direction: column-reverse;
+  }
+  .vertical-title, .vertical-title-desc{
+    left: 45px;
+  }
+  .secondSection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .secondSection .box{
+    width: 50vw;
+  }
+  .secondSection .vertical{
+    height: unset;
+  }
+  header{
+    display: inline-block;
+    width: 100%;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .leftSection{
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .rightSection{
+    width: 720px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .rightSection img{
+     width: 45vw;
+     margin-bottom: 72px;
+  }
+  footer{
+    display: none;
+  }
+} 
